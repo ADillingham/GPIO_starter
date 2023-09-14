@@ -38,6 +38,7 @@ int main(void)
     // to create an output, all you need is to write a 1 to PxDIR for the specific bit you want
     // A common mistake is to write P1DIR = LED1_MASK instead of P1DIR |= LED1_MASK;
 
+    *P1DIR_address = 1;
 
     // Initializing S1 (switch 1 or button 1)
     // According to the table on page 678 of MSP432 User guide,
